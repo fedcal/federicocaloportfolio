@@ -1,0 +1,866 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Ubuntu:ital,wght@0,500;0,700;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Navbar*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: rgb(216, 58, 58);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: rgb(216, 58, 58);
+}
+
+.navbar.sticky .logo a span {
+    color: white;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a span {
+    color: rgb(216, 58, 58);
+}
+
+.navbar .menu li a:hover {
+    color: rgb(216, 58, 58);
+}
+
+.navbar.sticky .menu li a:hover {
+    color: white;
+}
+
+
+/*menu button*/
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Home section styling*/
+
+.home {
+    display: flex;
+    background: url("sfondo.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: rgb(216, 58, 58);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(216, 58, 58);
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: rgb(216, 58, 58);
+    background: none;
+}
+
+.home .home-content .text-3 span {
+    color: rgb(216, 58, 58);
+    font-weight: 500;
+}
+
+
+/*all similar style content*/
+
+section {
+    padding: 100px 0;
+}
+
+.about,
+.services,
+.skills,
+.strumenti,
+.contact,
+footer,
+.letture,
+.metodologia {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.strumenti .strumenti-content,
+.contact .contact-content,
+.metodologia .metodologia-content,
+.letture .letture-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(216, 58, 58);
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+
+/*about section style*/
+
+.about .title::after {
+    content: "Mi presento";
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: rgb(216, 58, 58);
+}
+
+.about .about-content .right .text p {
+    text-align: justify;
+}
+
+
+/**Services section**/
+
+.services,
+.strumenti {
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before,
+.strumenti .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.strumenti .title::after {
+    content: "Serietà";
+    background: #111;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: rgb(216, 58, 58);
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: rgb(216, 58, 58);
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+/*skills section*/
+
+.skills .title::after {
+    content: "Cosa so fare";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    color: rgb(216, 58, 58);
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(216, 58, 58);
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 70%;
+}
+
+.skills-content .right .javascript::before {
+    width: 40%;
+}
+
+.skills-content .right .java::before {
+    width: 80%;
+}
+
+.skills-content .right .javafx::before {
+    width: 80%;
+}
+
+.skills-content .right .mysql::before {
+    width: 80%;
+}
+
+.skills-content .right .python::before {
+    width: 60%;
+}
+
+
+/*Modus Operandi*/
+
+.metodologia .title::after {
+    content: "Come lavoro";
+}
+
+.metodologia .metodologia-content p {
+    text-align: justify;
+}
+
+
+/*strumeti section*/
+
+.strumenti .title::after {
+    content: "IDE"
+}
+
+.strumenti .container {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strumenti .container .box {
+    width: 350px;
+    height: 700px;
+    background-color: #222;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.strumenti .container .box .model {
+    height: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 30px 10px 10px 10px;
+}
+
+.strumenti .container .box a {
+    display: inline-block;
+    background: rgb(216, 58, 58);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(216, 58, 58);
+}
+
+.strumenti .container .box .details p {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 10px 10px 7px 10px;
+    text-align: justify;
+}
+
+.strumenti .strumenti-content .box:hover {
+    background-color: #222;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+/*Sezione letture*/
+
+.letture .title::after {
+    content: "approfondimenti";
+}
+
+.letture .letture-content .column {
+    width: calc(50% - 30px);
+}
+
+.letture .letture-content .column ul {
+    display: flexbox;
+}
+
+.letture .letture-content .left .list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.letture .letture-content .left .list ul {
+    position: relative;
+}
+
+.letture .letture-content .left .list ul li {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 4px;
+    padding-right: 5px;
+}
+
+.letture .letture-content .left .list ul li a {
+    color: rgb(216, 58, 58);
+    text-decoration: underline;
+}
+
+.letture .letture-content .left .list ul li a:hover {
+    color: rgb(216, 58, 58);
+    text-decoration: underline;
+}
+
+.letture .letture-content .right .list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.letture .letture-content .right .list ul {
+    position: relative;
+}
+
+.letture .letture-content .right .list ul li {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 4px;
+    padding-right: 5px;
+}
+
+.letture .letture-content .right .list ul li a {
+    color: rgb(216, 58, 58);
+    text-decoration: underline;
+}
+
+.letture .letture-content .right .list ul li a:hover {
+    color: rgb(216, 58, 58);
+    text-decoration: underline;
+}
+
+.letture .letture-content a {
+    text-decoration: underline;
+    color: rgb(216, 58, 58);
+}
+
+
+/*sezione contattai*/
+
+.contact .title::after {
+    content: "scrivimi";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: rgb(216, 58, 58);
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #333;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right a {
+    color: #333;
+}
+
+
+/*footer section*/
+
+footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: rgb(216, 58, 58);
+    text-decoration: underline;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+footer .fab {
+    color: #fff;
+}
+
+
+/*scroll up button*/
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(216, 58, 58);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*responsive media qiery*/
+
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+        display: inline-block;
+        background: rgb(216, 58, 58);
+        color: #fff;
+    }
+    .max-width {
+        max-width: 930px;
+    }
+    .about .about-content .column {
+        width: 100%;
+    }
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right {
+        flex: 100%;
+    }
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .letture .column {
+        display: flex;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+    .home .home-content a {
+        font-size: 20px;
+    }
+    .services .serv-content .card,
+    .strumenti .strumenti-content .card {
+        width: 100%;
+    }
+    .letture .right {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .letture .right {
+        display: flex;
+    }
+}
+
+@media(max-width:375) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+        display: inline-block;
+        background: rgb(216, 58, 58);
+        color: #fff;
+    }
+    .max-width {
+        max-width: 930px;
+    }
+    .about .about-content .column {
+        width: 100%;
+    }
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right {
+        flex: 100%;
+    }
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .strumenti .strumenti-content .box {
+        width: 94%;
+        height: 500px;
+    }
+    .strumenti .strumenti-content .container .cs-hidden .item-a .box .details p {
+        font-size: 16px;
+        width: 250px;
+    }
+    .letture .right {
+        display: inline-flex;
+    }
+}
