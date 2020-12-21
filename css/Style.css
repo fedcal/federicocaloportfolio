@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    word-spacing: 0px;
+}
+
 
 /*Navbar*/
 
@@ -287,6 +291,7 @@ section .title::after {
     font-size: 50px;
     color: rgb(216, 58, 58);
     transition: color 0.3s ease;
+    align-items: center;
 }
 
 .services .serv-content .card:hover i {
@@ -297,6 +302,13 @@ section .title::after {
     font-size: 30px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    text-align: center;
+}
+
+.services .serv-content .card p {
+    text-align: justify;
+    font-weight: 100;
+    word-spacing: 0.3px;
 }
 
 
@@ -474,7 +486,7 @@ section .title::after {
 .letture .letture-content .left .list {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
     display: flex;
 }
 
@@ -488,6 +500,7 @@ section .title::after {
     padding-left: 4px;
     padding-right: 5px;
     color: rgb(216, 58, 58);
+    word-spacing: 0px;
 }
 
 .letture .letture-content .left .list ul li a {
@@ -520,7 +533,7 @@ section .title::after {
 
 .letture .letture-content .right .list ul li a {
     color: black;
-    text-decoration: underline;
+    word-spacing: 0px;
 }
 
 .letture .letture-content .right .list ul li a:hover {
@@ -531,6 +544,10 @@ section .title::after {
 .letture .letture-content a {
     text-decoration: underline;
     color: black;
+}
+
+.letture .letture-content p {
+    text-align: justify;
 }
 
 
@@ -583,6 +600,10 @@ section .title::after {
 
 .contact .right form .fields {
     display: flex;
+}
+
+.contact .right {
+    text-align: justify;
 }
 
 .contact .right a {
@@ -750,6 +771,9 @@ footer .fab {
     .strumenti .strumenti-content .card {
         width: 100%;
     }
+    .strumenti .container {
+        width: 100%;
+    }
     .letture .right {
         display: flex;
     }
@@ -787,6 +811,9 @@ footer .fab {
 }
 
 @media(max-width:375) {
+    p {
+        word-spacing: 3px;
+    }
     .menu-btn {
         display: block;
         z-index: 999;
@@ -863,4 +890,4 @@ footer .fab {
     .letture .right {
         display: inline-flex;
     }
-}
+}   
