@@ -454,15 +454,13 @@ section .title::after {
 
 .strumenti .strumenti-content .box:hover {
     background-color: #222;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
 }
 
 
 /*Sezione letture*/
 
 .letture .title::after {
-    content: "approfondimenti";
+    content: "Approfondimenti";
 }
 
 .letture .letture-content .column {
@@ -489,15 +487,16 @@ section .title::after {
     margin: 10px 0;
     padding-left: 4px;
     padding-right: 5px;
+    color: rgb(216, 58, 58);
 }
 
 .letture .letture-content .left .list ul li a {
-    color: rgb(216, 58, 58);
+    color: black;
     text-decoration: underline;
 }
 
 .letture .letture-content .left .list ul li a:hover {
-    color: rgb(216, 58, 58);
+    color: black;
     text-decoration: underline;
 }
 
@@ -516,28 +515,29 @@ section .title::after {
     margin: 10px 0;
     padding-left: 4px;
     padding-right: 5px;
+    color: rgb(216, 58, 58);
 }
 
 .letture .letture-content .right .list ul li a {
-    color: rgb(216, 58, 58);
+    color: black;
     text-decoration: underline;
 }
 
 .letture .letture-content .right .list ul li a:hover {
-    color: rgb(216, 58, 58);
+    color: black;
     text-decoration: underline;
 }
 
 .letture .letture-content a {
     text-decoration: underline;
-    color: rgb(216, 58, 58);
+    color: black;
 }
 
 
 /*sezione contattai*/
 
 .contact .title::after {
-    content: "scrivimi";
+    content: "Scrivimi";
 }
 
 .contact .contact-content .column {
