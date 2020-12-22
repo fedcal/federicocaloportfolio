@@ -308,7 +308,7 @@ section .title::after {
 .services .serv-content .card p {
     text-align: justify;
     font-weight: 100;
-    word-spacing: 0.3px;
+    word-spacing: 0px;
 }
 
 
@@ -462,6 +462,7 @@ section .title::after {
     font-weight: 100;
     margin: 10px 10px 7px 10px;
     text-align: justify;
+    word-spacing: 0px;
 }
 
 .strumenti .strumenti-content .box:hover {
@@ -506,6 +507,7 @@ section .title::after {
 .letture .letture-content .left .list ul li a {
     color: black;
     text-decoration: none;
+    word-spacing: 0px;
 }
 
 .letture .letture-content .left .list ul li a:hover {
@@ -534,11 +536,12 @@ section .title::after {
 .letture .letture-content .right .list ul li a {
     color: black;
     word-spacing: 0px;
+    text-decoration: none;
 }
 
 .letture .letture-content .right .list ul li a:hover {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .letture .letture-content a {
