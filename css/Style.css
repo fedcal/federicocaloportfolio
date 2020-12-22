@@ -505,10 +505,12 @@ section .title::after {
 
 .letture .letture-content .left .list ul li a {
     color: black;
+    text-decoration: none;
 }
 
 .letture .letture-content .left .list ul li a:hover {
     color: black;
+    text-decoration: none;
 }
 
 .letture .letture-content .right .list {
