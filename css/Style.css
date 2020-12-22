@@ -162,6 +162,7 @@ footer,
 .letture,
 .metodologia {
     font-family: 'Poppins', sans-serif;
+    word-spacing: 0px;
 }
 
 .about .about-content,
@@ -175,6 +176,7 @@ footer,
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    word-spacing: 0px;
 }
 
 section .title {
@@ -546,6 +548,7 @@ section .title::after {
 
 .letture .letture-content a {
     color: black;
+    text-decoration: none;
 }
 
 .letture .letture-content p {
