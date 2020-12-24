@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.federicocalo.it/sitemap.xml
+Sitemap: https://github.com/fedcal/federicocaloportfolio.github.io/blob/master/sitemap.xml
