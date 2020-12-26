@@ -1,6 +1,27 @@
 # Group 1
 User-agent: Googlebot
-Disallow: /nogooglebot/
+Allow: /
+
+User-agent: 	APIs-Google (+https://developers.google.com/webmasters/APIs-Google.html)
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google (+http://www.google.com/adsbot.html)
+Allow: /
+
+User-agente: Googlebot-Image/1.0
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile-Apps
+Allow: /
 
 # Group 2
 User-agent: *
