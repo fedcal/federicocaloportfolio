@@ -2,28 +2,16 @@
 User-agent: Googlebot
 Allow: /
 
-User-agent: Googlebot/2.1 (+http://www.google.com/bot.html)
+User-agent: AdsBot-Google-Mobile
 Allow: /
 
-User-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/W.X.Y.Z‡ Safari/537.36
-Allow: /
-
-User-agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
-Allow: /
-
-User-agent: 	APIs-Google (+https://developers.google.com/webmasters/APIs-Google.html)
+User-agent: APIs-Google
 Allow: /
 
 User-agent: Mediapartners-Google
 Allow: /
 
-User-agent: AdsBot-Google (+http://www.google.com/adsbot.html)
-Allow: /
-
-User-agente: Googlebot-Image/1.0
-Allow: /
-
-User-agent: Googlebot-News
+User-agent: AdsBot-Google
 Allow: /
 
 User-agent: Mediapartners-Google
