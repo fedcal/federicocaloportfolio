@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 Sitemap: https://www.federicocalo.it/sitemap.xml
