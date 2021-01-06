@@ -20,11 +20,6 @@ p {
     word-spacing: 0px;
 }
 
-a{
-    text-decoration: none;
-    word-spacing: 0px;
-}
-
 
 /*Navbar*/
 
@@ -88,6 +83,8 @@ a{
     color: white;
 }
 
+.navbar .lang-menu {}
+
 
 /*menu button*/
 
@@ -133,9 +130,10 @@ a{
     display: inline-block;
     background: rgb(216, 58, 58);
     color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
+    font-size: 13px;
+    padding: 5px 5px;
+    margin-top: 2px;
+    margin-bottom: 80px;
     border-radius: 6px;
     border: 2px solid rgb(216, 58, 58);
     transition: all 0.3s ease;
@@ -167,7 +165,6 @@ footer,
 .letture,
 .metodologia {
     font-family: 'Poppins', sans-serif;
-    word-spacing: 0px;
 }
 
 .about .about-content,
@@ -181,7 +178,6 @@ footer,
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    word-spacing: 0px;
 }
 
 section .title {
@@ -315,7 +311,7 @@ section .title::after {
 .services .serv-content .card p {
     text-align: justify;
     font-weight: 100;
-    word-spacing: 0px;
+    word-spacing: 0.3px;
 }
 
 
@@ -469,7 +465,6 @@ section .title::after {
     font-weight: 100;
     margin: 10px 10px 7px 10px;
     text-align: justify;
-    word-spacing: 0px;
 }
 
 .strumenti .strumenti-content .box:hover {
@@ -514,7 +509,6 @@ section .title::after {
 .letture .letture-content .left .list ul li a {
     color: black;
     text-decoration: none;
-    word-spacing: 0px;
 }
 
 .letture .letture-content .left .list ul li a:hover {
@@ -543,7 +537,6 @@ section .title::after {
 .letture .letture-content .right .list ul li a {
     color: black;
     word-spacing: 0px;
-    text-decoration: none;
 }
 
 .letture .letture-content .right .list ul li a:hover {
@@ -552,8 +545,8 @@ section .title::after {
 }
 
 .letture .letture-content a {
-    color: black;
     text-decoration: none;
+    color: black;
 }
 
 .letture .letture-content p {
@@ -730,8 +723,8 @@ footer .fab {
         font-size: 35px;
     }
     .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
+        font-size: 13px;
+        padding: 5px 5px;
         display: inline-block;
         background: rgb(216, 58, 58);
         color: #fff;
@@ -775,7 +768,7 @@ footer .fab {
         font-size: 32px;
     }
     .home .home-content a {
-        font-size: 20px;
+        font-size: 13px;
     }
     .services .serv-content .card,
     .strumenti .strumenti-content .card {
@@ -900,4 +893,4 @@ footer .fab {
     .letture .right {
         display: inline-flex;
     }
-}   
+}
